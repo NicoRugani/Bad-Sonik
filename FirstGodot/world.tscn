@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b0kbrdeyf78u0"]
+
+[node name="World" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 61.0
+offset_top = 37.0
+offset_right = 223.0
+offset_bottom = 78.0
+text = "This is the Word
+"
