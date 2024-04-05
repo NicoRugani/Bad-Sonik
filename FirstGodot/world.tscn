@@ -1,12 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://da63o45gecrsi"]
+[gd_scene load_steps=6 format=3 uid="uid://da63o45gecrsi"]
 
+[ext_resource type="Script" path="res://world.cs" id="1_q3gw3"]
 [ext_resource type="PackedScene" uid="uid://dbho2ttiqrird" path="res://player.tscn" id="1_yqmm2"]
 [ext_resource type="PackedScene" uid="uid://dqi37ca8dyvr1" path="res://play_area.tscn" id="2_1lym1"]
+[ext_resource type="PackedScene" uid="uid://qqf8m4epgb7h" path="res://ring.tscn" id="4_kvbnl"]
+[ext_resource type="Script" path="res://SpawnTimer.cs" id="5_8q4pd"]
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_q3gw3")
 
 [node name="Player" parent="." instance=ExtResource("1_yqmm2")]
 z_index = 1
 position = Vector2(557, 413)
 
 [node name="PlayArea" parent="." instance=ExtResource("2_1lym1")]
+position = Vector2(-38, 80)
+
+[node name="Ring" parent="." instance=ExtResource("4_kvbnl")]
+position = Vector2(475, -24)
+
+[node name="SpawnTimer" type="Timer" parent="Ring"]
+wait_time = 3.0
+autostart = true
+script = ExtResource("5_8q4pd")
+
+[connection signal="timeout" from="Ring/SpawnTimer" to="." method="_on_spawn_timer_timeout"]

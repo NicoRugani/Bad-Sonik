@@ -3,7 +3,7 @@ using System;
 
 public partial class PlayerMovement : CharacterBody2D
 {
-	public const float Speed = 400.0f;
+	public const float Speed = 700.0f;
 	public const float JumpVelocity = -600.0f;
 
 	// Get the gravity from the project settings to be synced with RigidBody nodes.

@@ -22,13 +22,13 @@ position = Vector2(594, 640.75)
 shape = SubResource("RectangleShape2D_yeele")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(672, 637)
-scale = Vector2(2.75, 1)
+position = Vector2(678.25, 637)
+scale = Vector2(2.775, 1)
 texture = ExtResource("1_0nwq8")
 
 [node name="360F316365913Wkvkzw7Gzsqqhkx4PgGyu0rArj5GykHk" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(593, 302.5)
-scale = Vector2(1.38732, 1.675)
+position = Vector2(596.5, 297)
+scale = Vector2(1.39554, 1.70556)
 texture = ExtResource("2_lfus5")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
