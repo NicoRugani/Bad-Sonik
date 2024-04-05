@@ -1,11 +1,12 @@
-[gd_scene format=3 uid="uid://b0kbrdeyf78u0"]
+[gd_scene load_steps=3 format=3 uid="uid://da63o45gecrsi"]
+
+[ext_resource type="PackedScene" uid="uid://dbho2ttiqrird" path="res://player.tscn" id="1_yqmm2"]
+[ext_resource type="PackedScene" uid="uid://dqi37ca8dyvr1" path="res://play_area.tscn" id="2_1lym1"]
 
 [node name="World" type="Node2D"]
 
-[node name="Label" type="Label" parent="."]
-offset_left = 61.0
-offset_top = 37.0
-offset_right = 223.0
-offset_bottom = 78.0
-text = "This is the Word
-"
+[node name="Player" parent="." instance=ExtResource("1_yqmm2")]
+z_index = 1
+position = Vector2(557, 413)
+
+[node name="PlayArea" parent="." instance=ExtResource("2_1lym1")]

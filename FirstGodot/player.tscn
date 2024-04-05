@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbho2ttiqrird"]
+
+[ext_resource type="Texture2D" uid="uid://bevvxg32xhywk" path="res://d2e7b2f0332b011de5a80fdfb4d42895265b4aca_2_500x500-fotor-bg-remover-2024040594316.png" id="1_10pve"]
+[ext_resource type="Script" path="res://PlayerMovement.cs" id="1_pw61a"]
+
+[node name="Player" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_pw61a")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(0.42, 0.426)
+texture = ExtResource("1_10pve")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+position = Vector2(-0.552748, -0.215582)
+scale = Vector2(0.421099, 0.431159)
+polygon = PackedVector2Array(34, -170, 35, -132, -5, -170, -5, -136, -45, -172, -45, -133, -85, -172, -85, -121, -125, -156, -125, -96, -180, -119, -158, -64, -158, -64, -203, -63, -163, -22, -203, -26, -162, 16, -209, 16, -164, 56, -205, 57, -164, 98, -202, 99, -166, 136, -201, 169, 78, 173, 78, 167, 76, 161, 73, 156, 66, 149, 59, 145, 47, 143, 47, 90, 99, 36, 152, 35, 166, 33, 180, 28, 194, 20, 203, 11, 211, 0, 214, -15, 214, -28, 177, -29)
