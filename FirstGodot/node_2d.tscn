@@ -1,3 +1,58 @@
-[gd_scene format=3 uid="uid://cub5mrelxoe2j"]
+[gd_scene load_steps=8 format=3 uid="uid://cub5mrelxoe2j"]
+
+[ext_resource type="Texture2D" uid="uid://btktla8h1bldo" path="res://png-clipart-opengameart-org-concept-art-music-two-dimensional-space-platform-miscellaneous-texture-fotor-bg-remover-2024040581428.png" id="1_xgy5q"]
+[ext_resource type="Script" path="res://CharecterMovement.cs" id="2_n28oh"]
+[ext_resource type="Texture2D" uid="uid://bpkxj3bdb1ptw" path="res://360_F_316365913_WKVKZW7gzsqqhkx4PgGyu0rArj5GykHK.jpg" id="4_20lj6"]
+[ext_resource type="Texture2D" uid="uid://cc6018p130afd" path="res://d2e7b2f0332b011de5a80fdfb4d42895265b4aca_2_500x500-fotor-bg-remover-2024040594316.png" id="5_visml"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_77loo"]
+size = Vector2(1183.75, 71)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ydjn2"]
+size = Vector2(694, 15.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_krpke"]
+size = Vector2(20, 692)
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(-1, -1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Png-clipart-opengameart-org-concept-art-music-two-dimensional-space-platform-miscellaneous-texture-fotor-bg-remover-2024040581428" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(673, 642.5)
+scale = Vector2(2.756, 1.03831)
+texture = ExtResource("1_xgy5q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(595.125, 644)
+shape = SubResource("RectangleShape2D_77loo")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1195.25, 343)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_ydjn2")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-10, 336)
+shape = SubResource("RectangleShape2D_krpke")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(0, 1)
+script = ExtResource("2_n28oh")
+
+[node name="player" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(436, 478)
+scale = Vector2(0.362, 0.342)
+texture = ExtResource("5_visml")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+position = Vector2(936, 183)
+scale = Vector2(1.51302, 1.4326)
+polygon = PackedVector2Array(-361, 184, -374, 178, -368, 191, -379, 191, -369, 201, -379, 201, -369, 210, -379, 210, -369, 220, -379, 220, -369, 229, -379, 229, -370, 238, -379, 247, -312, 247, -313, 245, -314, 243, -315, 241, -317, 240, -320, 240, -320, 228, -307, 214, -295, 215, -291, 214, -287, 212, -284, 210, -283, 208, -281, 204, -280, 201, -280, 199, -289, 199, -323, 165, -323, 175, -333, 165, -333, 174, -342, 166, -342, 175, -352, 165, -352, 179, -361, 169)
+
+[node name="360F316365913Wkvkzw7Gzsqqhkx4PgGyu0rArj5GykHk" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(594, 302)
+scale = Vector2(1.39202, 1.67222)
+texture = ExtResource("4_20lj6")
