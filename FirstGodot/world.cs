@@ -33,6 +33,8 @@ public partial class world : Node2D
 		AddChild(instance);
 		instance.Position = new Vector2(randomX, 0);
 	}
+	
+	
 }
 
 

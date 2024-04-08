@@ -11,10 +11,10 @@ script = ExtResource("1_q3gw3")
 
 [node name="Player" parent="." instance=ExtResource("1_yqmm2")]
 z_index = 1
-position = Vector2(557, 413)
+position = Vector2(594, 338)
 
 [node name="PlayArea" parent="." instance=ExtResource("2_1lym1")]
-position = Vector2(-38, 80)
+position = Vector2(-4, 8)
 
 [node name="Ring" parent="." instance=ExtResource("4_kvbnl")]
 position = Vector2(475, -24)
