@@ -6,16 +6,21 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_4awmk"]
 radius = 25.0
 
-[node name="Ring" type="Node2D"]
+[node name="Ring" type="Node2D" node_paths=PackedStringArray("body")]
 script = ExtResource("1_pp0ju")
+body = NodePath("Body")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
+[node name="Body" type="RigidBody2D" parent="."]
+max_contacts_reported = 1
+contact_monitor = true
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Body"]
 position = Vector2(-5.5, 6)
 scale = Vector2(0.126, 0.124)
 texture = ExtResource("1_3v4d2")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Body"]
 position = Vector2(-6, 6)
 shape = SubResource("CircleShape2D_4awmk")
+
+[connection signal="body_entered" from="Body" to="." method="_on_rigid_body_2d_body_entered"]
