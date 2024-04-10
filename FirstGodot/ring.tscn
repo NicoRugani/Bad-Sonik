@@ -6,9 +6,8 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_4awmk"]
 radius = 25.0
 
-[node name="Ring" type="Node2D" node_paths=PackedStringArray("body")]
+[node name="Ring" type="Node2D"]
 script = ExtResource("1_pp0ju")
-body = NodePath("Body")
 
 [node name="Body" type="RigidBody2D" parent="."]
 max_contacts_reported = 1

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dqi37ca8dyvr1"]
+[gd_scene load_steps=7 format=3 uid="uid://dqi37ca8dyvr1"]
 
 [ext_resource type="Texture2D" uid="uid://7xoeyisa1m5g" path="res://png-clipart-opengameart-org-concept-art-music-two-dimensional-space-platform-miscellaneous-texture-fotor-bg-remover-2024040581428.png" id="1_0nwq8"]
 [ext_resource type="Texture2D" uid="uid://bg306euc64gs7" path="res://360_F_316365913_WKVKZW7gzsqqhkx4PgGyu0rArj5GykHK.jpg" id="2_lfus5"]
@@ -11,6 +11,9 @@ size = Vector2(13, 677)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ju71f"]
 size = Vector2(13, 679)
+
+[sub_resource type="SystemFont" id="SystemFont_g8pp2"]
+subpixel_positioning = 0
 
 [node name="PlayArea" type="Node2D"]
 
@@ -38,3 +41,12 @@ shape = SubResource("RectangleShape2D_8o7qa")
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(1190.5, 340.5)
 shape = SubResource("RectangleShape2D_ju71f")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 23.0
+offset_top = 1.0
+offset_right = 75.0
+offset_bottom = 24.0
+theme_override_fonts/font = SubResource("SystemFont_g8pp2")
+theme_override_font_sizes/font_size = 30
+text = "Score: "

@@ -12,6 +12,7 @@ public partial class PlayerMovement : CharacterBody2D
 	public override void _PhysicsProcess(double delta)
 	{
 		Vector2 velocity = Velocity;
+		
 
 		// Add the gravity.
 		if (!IsOnFloor())
