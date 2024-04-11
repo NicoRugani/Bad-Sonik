@@ -1,21 +1,28 @@
 using Godot;
 using System;
+using System.Collections;
+using System.Diagnostics;
+
+
 
 public partial class ring : Node2D
 {
     [Export]
-    private int score = 0;
     private Label scoreText;
+
+    private CharacterBody2D player;
     private Label labelNode; // Reference to the Label node you want to update
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        scoreText = GetNode<Label>("TxtLabel");
-        scoreText.Text = "Score: " + score;
+        scoreText = GetParent().GetNode<Label>("Label");
+        player = (CharacterBody2D)GetNode("../Player");
+        
+        
 
         // Get reference to the Label node called "Label"
-        labelNode = GetNode<Label>("Label");
+        
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -26,20 +33,20 @@ public partial class ring : Node2D
 
     private void _on_rigid_body_2d_body_entered(Node body)
     {
-        score += 1;
-        QueueFree(); /
-
-        // Update the score text
-        scoreText.Text = "Score: " + score;
-
-        // Update the label node text with the updated score
-        if (labelNode != null)
-        {
-            labelNode.Text = "Score: " + score;
+        QueueFree();
+        GD.Print(player);
+        
+        if(body == player){
+            scoreText.Text = "Score: " + ScoreUpdate().ToString();
         }
-        else
-        {
-            GD.Print("Label node not found!"); // Print error message if the Label node is not found
-        }
+        
+       
+        
+        
     }
-}
+    private int ScoreUpdate(){
+        GetParent<world>().score += 1;
+        return GetParent<world>().score;
+    }
+        
+    }

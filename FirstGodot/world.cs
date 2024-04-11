@@ -4,6 +4,8 @@ using System;
 
 public partial class world : Node2D
 {
+	[Export]
+	public int score;
 	Random random = new Random();
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
