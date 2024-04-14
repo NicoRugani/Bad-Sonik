@@ -14,21 +14,21 @@ script = ExtResource("1_5q8ok")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 440.0
+offset_left = 407.0
 offset_top = 318.0
-offset_right = 715.0
+offset_right = 751.0
 offset_bottom = 411.0
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "Play Again?
 "
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 437.0
+offset_left = 409.0
 offset_top = 480.0
-offset_right = 708.0
+offset_right = 744.0
 offset_bottom = 571.0
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "Quit
 "
 
@@ -42,16 +42,6 @@ theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 150
 text = "YOU DIED!"
-
-[node name="Label2" type="Label" parent="."]
-layout_mode = 0
-offset_left = 480.0
-offset_top = 47.0
-offset_right = 628.0
-offset_bottom = 116.0
-theme_override_font_sizes/font_size = 50
-text = "Score:
-"
 
 [node name="Hell-1" type="Sprite2D" parent="."]
 z_index = -1

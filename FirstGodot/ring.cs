@@ -12,6 +12,8 @@ public partial class ring : Node2D
     private Label livesText;
     private Label labelNode; // Reference to the Label node you want to update
 
+    
+
   
    
 
@@ -21,11 +23,6 @@ public partial class ring : Node2D
     {
         scoreText = GetParent().GetNode<Label>("Label");
         livesText = GetParent().GetNode<Label>("Label2");
-       
-       
-        
-        
-
         // Get reference to the Label node called "Label"
         
     }
@@ -33,26 +30,26 @@ public partial class ring : Node2D
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
     {
-        // Your _Process() implementation
+        
     }
 
     private void _on_rigid_body_2d_body_entered(Node body)
     {
-        QueueFree();
-        int lives = Lives();
-        scoreText.Text = "Score: " + ScoreUpdate().ToString();
-        GD.Print(lives);
-        
-        if(lives == 0){
-           
-            GetTree().ChangeSceneToFile("res://death.tscn");
-        }else{
-            livesText.Text = "Lives: " + lives.ToString();
+        if(body.Name == "CharacterBody2D"){//checks to see what the ring is colliding with
+            QueueFree();
+            scoreText.Text = "Score: " + ScoreUpdate().ToString();
+
         }
-
-        
-
-        
+        else{
+            QueueFree();
+            int lives = Lives();
+            if(lives == 0){
+           
+                GetTree().ChangeSceneToFile("res://death.tscn");//changes scene to death screen
+            }else{
+                livesText.Text = "Lives: " + lives.ToString();
+            }
+        }  
         
         
     }

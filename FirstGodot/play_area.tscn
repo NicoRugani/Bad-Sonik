@@ -4,13 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://bg306euc64gs7" path="res://360_F_316365913_WKVKZW7gzsqqhkx4PgGyu0rArj5GykHK.jpg" id="2_lfus5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yeele"]
-size = Vector2(1186, 73.5)
+size = Vector2(1192, 73.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8o7qa"]
-size = Vector2(13, 677)
+size = Vector2(13, 751.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ju71f"]
-size = Vector2(13, 679)
+size = Vector2(6, 693)
 
 [node name="PlayArea" type="Node2D"]
 
@@ -18,7 +18,7 @@ size = Vector2(13, 679)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(594, 640.75)
+position = Vector2(597, 640.75)
 shape = SubResource("RectangleShape2D_yeele")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
@@ -27,14 +27,14 @@ scale = Vector2(2.775, 1)
 texture = ExtResource("1_0nwq8")
 
 [node name="360F316365913Wkvkzw7Gzsqqhkx4PgGyu0rArj5GykHk" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(596.5, 297)
-scale = Vector2(1.39554, 1.70556)
+position = Vector2(596, 297)
+scale = Vector2(1.39671, 1.70556)
 texture = ExtResource("2_lfus5")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-3.5, 338.5)
+position = Vector2(-7, 299.75)
 shape = SubResource("RectangleShape2D_8o7qa")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1190.5, 340.5)
+position = Vector2(1194, 333.5)
 shape = SubResource("RectangleShape2D_ju71f")

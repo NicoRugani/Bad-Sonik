@@ -14,8 +14,7 @@ public partial class death : Control
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		finalScore = GetNode<Label>("Label2");
-		finalScore = GetParent<ring>().GetNode<Label>("Label");
+		
 		
 	}
 
@@ -31,11 +30,5 @@ public partial class death : Control
 		GetTree().Quit();
 	}
 
-	/*private Label GetScore(){
-		
-		
-        return GetParent<ring>().GetNode<Label>("Label");
-		
-		
-	}*/
+	
 }
