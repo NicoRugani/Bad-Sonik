@@ -6,6 +6,8 @@ public partial class world : Node2D
 {
 	[Export]
 	public int score;
+
+	public int lives = 3;
 	Random random = new Random();
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -35,8 +37,6 @@ public partial class world : Node2D
 		
 		AddChild(instance);
 		instance.Position = new Vector2(randomX, 0);
-
-		
 	}
 	
 	

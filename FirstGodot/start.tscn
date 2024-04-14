@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://lnk8v6hudc14"]
+
+[ext_resource type="Script" path="res://start.gd" id="1_sjmpi"]
+[ext_resource type="Texture2D" uid="uid://bg306euc64gs7" path="res://360_F_316365913_WKVKZW7gzsqqhkx4PgGyu0rArj5GykHK.jpg" id="2_0nsto"]
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sjmpi")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 278.0
+offset_right = 692.0
+offset_bottom = 371.0
+theme_override_font_sizes/font_size = 30
+text = "Play"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 428.0
+offset_right = 687.0
+offset_bottom = 523.0
+theme_override_font_sizes/font_size = 30
+text = "Quit
+"
+
+[node name="360F316365913Wkvkzw7Gzsqqhkx4PgGyu0rArj5GykHk" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(596, 346)
+scale = Vector2(1.3885, 1.86667)
+texture = ExtResource("2_0nsto")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 338.0
+offset_top = 53.0
+offset_right = 845.0
+offset_bottom = 190.0
+theme_override_font_sizes/font_size = 100
+text = "Boof Sonic
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

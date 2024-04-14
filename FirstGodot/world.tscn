@@ -16,7 +16,7 @@ z_index = 1
 position = Vector2(594, 338)
 
 [node name="PlayArea" parent="." instance=ExtResource("2_1lym1")]
-position = Vector2(-4, 8)
+position = Vector2(3, 1)
 
 [node name="SpawnTimer" type="Timer" parent="."]
 autostart = true
@@ -30,5 +30,13 @@ offset_bottom = 43.0
 theme_override_fonts/font = SubResource("SystemFont_yd1aq")
 theme_override_font_sizes/font_size = 30
 text = "Score: "
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 9.0
+offset_top = 42.0
+offset_right = 150.0
+offset_bottom = 132.0
+theme_override_font_sizes/font_size = 30
+text = "Lives: 3"
 
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
