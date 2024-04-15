@@ -13,7 +13,7 @@ config_version=5
 config/name="FirstGodot"
 run/main_scene="res://start.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://d2e7b2f0332b011de5a80fdfb4d42895265b4aca_2_500x500-fotor-bg-remover-2024040594316.png"
 
 [display]
 

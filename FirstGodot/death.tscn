@@ -45,8 +45,8 @@ text = "YOU DIED!"
 
 [node name="Hell-1" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(601, 347)
-scale = Vector2(2.10877, 1.83513)
+position = Vector2(601, 341.25)
+scale = Vector2(2.10877, 1.86622)
 texture = ExtResource("2_b86iy")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

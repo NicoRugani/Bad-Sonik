@@ -33,19 +33,18 @@ text = "Quit
 
 [node name="360F316365913Wkvkzw7Gzsqqhkx4PgGyu0rArj5GykHk" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(596, 346)
-scale = Vector2(1.3885, 1.86667)
+position = Vector2(596, 341)
+scale = Vector2(1.3885, 1.89444)
 texture = ExtResource("2_0nsto")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 181.0
-offset_top = 49.0
-offset_right = 989.0
-offset_bottom = 186.0
+offset_left = 326.0
+offset_top = 48.0
+offset_right = 860.0
+offset_bottom = 185.0
 theme_override_font_sizes/font_size = 100
-text = "Sonic: Ring Rush
-"
+text = "Boof Sonic"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
