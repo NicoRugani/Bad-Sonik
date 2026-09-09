@@ -3,8 +3,8 @@
 ## Overview
 Bad Sonik is a 2D infinite runner built in Godot using C#. Players collect falling rings to increase their score, catching as many as they can without letting them hit the ground. Miss to many and its game over, so you gotta go fast ;). 
 
-The project was originally developed as a side project a couple years ago. The goal was to teach myself how to use Godot while incorperating the C# skills I was learning in class at the time. 
-It has now since been refactored to improve the code quality and preserve this step (gem xD) in my career. PLEASE ENJOY!
+The project was originally developed as a side project a couple years ago. The goal was to teach myself how to use Godot while incorporating the C# skills I was learning in class at the time. 
+It has now since been refactored to improve the code quality and preserve this step (gem xD) in my career. PLEASE ENJOY! :)
 
 ## SneakPeak
 <img width="585" height="338" alt="Screenshot 2026-09-09 at 4 35 04 PM" src="https://github.com/user-attachments/assets/1ce9158d-f557-4522-946e-fd7a26d9cb34" />
