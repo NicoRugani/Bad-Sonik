@@ -4,7 +4,11 @@ public partial class DeathMenu : Control
 {
     private void OnPlayAgainButtonPressed()
     {
-        GetTree().ChangeSceneToFile("res://Scenes/world.tscn");
+        Error result = GetTree().ChangeSceneToFile("res://Scenes/world.tscn");
+        if (result != Error.Ok)
+        {
+            GD.PushError($"Failed to restart world scene: {result}");
+        }
     }
 
     private void OnQuitButtonPressed()
