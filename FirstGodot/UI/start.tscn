@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://lnk8v6hudc14"]
+[gd_scene format=3 uid="uid://lnk8v6hudc14"]
 
-[ext_resource type="Script" path="res://UI/StartMenu.gd" id="1_sjmpi"]
-[ext_resource type="Texture2D" uid="uid://bg306euc64gs7" path="res://Assets/Sprites/360_F_316365913_WKVKZW7gzsqqhkx4PgGyu0rArj5GykHK.jpg" id="2_0nsto"]
+[ext_resource type="Script" uid="uid://bh1g42tikkhtm" path="res://UI/StartMenu.gd" id="1_sjmpi"]
+[ext_resource type="Texture2D" uid="uid://3kifl85w6b05" path="res://Assets/Sprites/360_F_316365913_WKVKZW7gzsqqhkx4PgGyu0rArj5GykHK.jpg" id="2_0nsto"]
 
-[node name="Start" type="Control"]
+[node name="Start" type="Control" unique_id=285734806]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sjmpi")
 
-[node name="PlayButton" type="Button" parent="."]
+[node name="PlayButton" type="Button" parent="." unique_id=1925046130]
 layout_mode = 0
 offset_left = 434.0
 offset_top = 278.0
@@ -21,29 +21,30 @@ offset_bottom = 371.0
 theme_override_font_sizes/font_size = 50
 text = "Play"
 
-[node name="QuitButton" type="Button" parent="."]
+[node name="QuitButton" type="Button" parent="." unique_id=1586946185]
 layout_mode = 0
 offset_left = 432.0
 offset_top = 428.0
 offset_right = 739.0
 offset_bottom = 523.0
 theme_override_font_sizes/font_size = 50
-text = "Quit\n"
+text = "Quit
+"
 
-[node name="Background" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="." unique_id=1347909642]
 z_index = -1
 position = Vector2(596, 341)
 scale = Vector2(1.3885, 1.89444)
 texture = ExtResource("2_0nsto")
 
-[node name="TitleLabel" type="Label" parent="."]
+[node name="TitleLabel" type="Label" parent="." unique_id=403450581]
 layout_mode = 0
 offset_left = 326.0
 offset_top = 48.0
 offset_right = 860.0
 offset_bottom = 185.0
 theme_override_font_sizes/font_size = 100
-text = "Boof Sonic"
+text = "Bad Sonik"
 
 [connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
