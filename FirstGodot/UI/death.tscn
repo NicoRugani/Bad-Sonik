@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://sc7vokmp1idi"]
 
-[ext_resource type="Script" path="res://death.cs" id="1_5q8ok"]
-[ext_resource type="Texture2D" uid="uid://camokq7g8t771" path="res://hell-1.jpg" id="2_b86iy"]
+[ext_resource type="Script" path="res://Scripts/DeathMenu.cs" id="1_5q8ok"]
+[ext_resource type="Texture2D" uid="uid://camokq7g8t771" path="res://Assets/Sprites/hell-1.jpg" id="2_b86iy"]
 
 [node name="Death" type="Control"]
 layout_mode = 3
@@ -12,27 +12,25 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5q8ok")
 
-[node name="Button" type="Button" parent="."]
+[node name="PlayAgainButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 407.0
 offset_top = 318.0
 offset_right = 751.0
 offset_bottom = 411.0
 theme_override_font_sizes/font_size = 50
-text = "Play Again?
-"
+text = "Play Again?\n"
 
-[node name="Button2" type="Button" parent="."]
+[node name="QuitButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 409.0
 offset_top = 480.0
 offset_right = 744.0
 offset_bottom = 571.0
 theme_override_font_sizes/font_size = 50
-text = "Quit
-"
+text = "Quit\n"
 
-[node name="Label" type="Label" parent="."]
+[node name="DeathLabel" type="Label" parent="."]
 layout_mode = 0
 offset_left = 210.0
 offset_top = 103.0
@@ -43,11 +41,11 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 150
 text = "YOU DIED!"
 
-[node name="Hell-1" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(601, 341.25)
 scale = Vector2(2.10877, 1.86622)
 texture = ExtResource("2_b86iy")
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="PlayAgainButton" to="." method="OnPlayAgainButtonPressed"]
+[connection signal="pressed" from="QuitButton" to="." method="OnQuitButtonPressed"]

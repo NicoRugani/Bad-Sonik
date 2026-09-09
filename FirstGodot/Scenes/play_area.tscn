@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dqi37ca8dyvr1"]
 
-[ext_resource type="Texture2D" uid="uid://7xoeyisa1m5g" path="res://png-clipart-opengameart-org-concept-art-music-two-dimensional-space-platform-miscellaneous-texture-fotor-bg-remover-2024040581428.png" id="1_0nwq8"]
-[ext_resource type="Texture2D" uid="uid://bg306euc64gs7" path="res://360_F_316365913_WKVKZW7gzsqqhkx4PgGyu0rArj5GykHK.jpg" id="2_lfus5"]
+[ext_resource type="Texture2D" uid="uid://7xoeyisa1m5g" path="res://Assets/Sprites/png-clipart-opengameart-org-concept-art-music-two-dimensional-space-platform-miscellaneous-texture-fotor-bg-remover-2024040581428.png" id="1_0nwq8"]
+[ext_resource type="Texture2D" uid="uid://bg306euc64gs7" path="res://Assets/Sprites/360_F_316365913_WKVKZW7gzsqqhkx4PgGyu0rArj5GykHK.jpg" id="2_lfus5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yeele"]
 size = Vector2(1192, 73.5)

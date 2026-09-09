@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="FirstGodot"
-run/main_scene="res://start.tscn"
+config/name="Bad Sonik"
+run/main_scene="res://UI/start.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
-config/icon="res://d2e7b2f0332b011de5a80fdfb4d42895265b4aca_2_500x500-fotor-bg-remover-2024040594316.png"
+config/icon="res://Assets/Sprites/d2e7b2f0332b011de5a80fdfb4d42895265b4aca_2_500x500-fotor-bg-remover-2024040594316.png"
 
 [display]
 
@@ -22,7 +22,7 @@ window/size/viewport_height=680
 
 [dotnet]
 
-project/assembly_name="FirstGodot"
+project/assembly_name="BadSonik"
 
 [input]
 
