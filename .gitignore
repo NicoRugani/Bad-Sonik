@@ -1,0 +1,12 @@
+# OS/editor
+.DS_Store
+.vscode/
+
+# Godot
+.godot/
+*.import
+
+# .NET build output
+**/bin/
+**/obj/
+.mono/

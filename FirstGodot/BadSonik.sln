@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstGodot", "FirstGodot.csproj", "{DBE5810F-B02E-46A4-92C6-1B9B4E12A7C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadSonik", "BadSonik.csproj", "{DBE5810F-B02E-46A4-92C6-1B9B4E12A7C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

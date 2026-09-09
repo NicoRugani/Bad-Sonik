@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://qqf8m4epgb7h"]
 
-[ext_resource type="Texture2D" uid="uid://c68i4uhos87sj" path="res://pngtree-shining-gold-ring-vector-png-png-image_4572061-fotor-bg-remover-2024040512537.png" id="1_3v4d2"]
-[ext_resource type="Script" path="res://ring.cs" id="1_pp0ju"]
+[ext_resource type="Texture2D" uid="uid://c68i4uhos87sj" path="res://Assets/Sprites/pngtree-shining-gold-ring-vector-png-png-image_4572061-fotor-bg-remover-2024040512537.png" id="1_3v4d2"]
+[ext_resource type="Script" path="res://Scripts/Ring.cs" id="1_pp0ju"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4awmk"]
 radius = 25.0
@@ -22,4 +22,4 @@ texture = ExtResource("1_3v4d2")
 position = Vector2(-6, 6)
 shape = SubResource("CircleShape2D_4awmk")
 
-[connection signal="body_entered" from="Body" to="." method="_on_rigid_body_2d_body_entered"]
+[connection signal="body_entered" from="Body" to="." method="OnBodyEntered"]

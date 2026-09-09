@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://da63o45gecrsi"]
+[gd_scene load_steps=5 format=3 uid="uid://da63o45gecrsi"]
 
-[ext_resource type="Script" path="res://world.cs" id="1_q3gw3"]
-[ext_resource type="PackedScene" uid="uid://dbho2ttiqrird" path="res://player.tscn" id="1_yqmm2"]
-[ext_resource type="PackedScene" uid="uid://dqi37ca8dyvr1" path="res://play_area.tscn" id="2_1lym1"]
-[ext_resource type="Script" path="res://SpawnTimer.cs" id="5_8q4pd"]
+[ext_resource type="Script" path="res://Scripts/World.cs" id="1_q3gw3"]
+[ext_resource type="PackedScene" uid="uid://dbho2ttiqrird" path="res://Scenes/player.tscn" id="1_yqmm2"]
+[ext_resource type="PackedScene" uid="uid://dqi37ca8dyvr1" path="res://Scenes/play_area.tscn" id="2_1lym1"]
 
 [sub_resource type="SystemFont" id="SystemFont_yd1aq"]
 subpixel_positioning = 0
@@ -20,9 +19,8 @@ position = Vector2(3, 1)
 
 [node name="SpawnTimer" type="Timer" parent="."]
 autostart = true
-script = ExtResource("5_8q4pd")
 
-[node name="Label" type="Label" parent="."]
+[node name="ScoreLabel" type="Label" parent="."]
 offset_left = 6.0
 offset_top = 1.0
 offset_right = 102.0
@@ -31,7 +29,7 @@ theme_override_fonts/font = SubResource("SystemFont_yd1aq")
 theme_override_font_sizes/font_size = 30
 text = "Score: "
 
-[node name="Label2" type="Label" parent="."]
+[node name="LivesLabel" type="Label" parent="."]
 offset_left = 9.0
 offset_top = 42.0
 offset_right = 150.0
@@ -39,4 +37,4 @@ offset_bottom = 132.0
 theme_override_font_sizes/font_size = 30
 text = "Lives: 3"
 
-[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
+[connection signal="timeout" from="SpawnTimer" to="." method="OnSpawnTimerTimeout"]
