@@ -3,7 +3,7 @@
 ## Overview
 Bad Sonik is a 2D Godot infinite runner prototype where the player dodges failure by collecting falling rings while managing limited lives.
 
-##SneakPeak
+## SneakPeak
 <img width="585" height="338" alt="Screenshot 2026-09-09 at 4 35 04 PM" src="https://github.com/user-attachments/assets/1ce9158d-f557-4522-946e-fd7a26d9cb34" />
 
 <img width="585" height="338" alt="Screenshot 2026-09-09 at 4 35 19 PM" src="https://github.com/user-attachments/assets/48081414-4928-4803-947e-060f2776f692" />
