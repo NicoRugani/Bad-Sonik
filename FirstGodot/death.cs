@@ -20,13 +20,14 @@ public partial class death : Control
 
 	private void _on_button_pressed()
 	{
-		
+		// Restart the gameplay scene from the death menu.
 		GetTree().ChangeSceneToFile("res://world.tscn");
 
 
 	}
 
 	private void _on_button_2_pressed(){
+		// Exit the game from the death menu.
 		GetTree().Quit();
 	}
 
