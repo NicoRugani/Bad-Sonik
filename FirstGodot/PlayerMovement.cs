@@ -3,7 +3,9 @@ using System;
 
 public partial class PlayerMovement : CharacterBody2D
 {
+	// Base horizontal movement speed in pixels per second.
 	public const float Speed = 600.0f;
+	// Upward impulse applied when the player jumps.
 	public const float JumpVelocity = -600.0f;
 
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -18,12 +20,13 @@ public partial class PlayerMovement : CharacterBody2D
 		if (!IsOnFloor())
 			velocity.Y += 1500 * (float)delta;
 
-		// Handle Jump.
+		// Allow jumping only while the player is touching the floor.
 		if (Input.IsActionJustPressed("ui_up") && IsOnFloor())
 			velocity.Y = JumpVelocity;
 
 		// Get the input direction and handle the movement/deceleration.
 		// As good practice, you should replace UI actions with custom gameplay actions.
+		// Read horizontal input and apply acceleration/deceleration.
 		Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
 		if (direction != Vector2.Zero)
 		{
