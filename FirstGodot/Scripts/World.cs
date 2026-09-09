@@ -130,6 +130,7 @@ public partial class World : Node2D
 
     private bool TryFindSpawnPosition(out Vector2 spawnPosition)
     {
+        // Retry a few times so newly spawned rings do not stack at the spawn line.
         for (int attempt = 0; attempt < Mathf.Max(1, _maxSpawnAttempts); attempt++)
         {
             spawnPosition = new Vector2(GetRandomXCoordinate(), _spawnY);
@@ -220,6 +221,7 @@ public partial class World : Node2D
         _lives = 0;
         UpdateLivesLabel();
 
+        // Freeze gameplay before changing scenes so no late collision can mutate state.
         SetGameState(GameState.GameOver);
         ClearActiveRings();
 

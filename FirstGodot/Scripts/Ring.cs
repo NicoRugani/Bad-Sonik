@@ -24,6 +24,7 @@ public partial class Ring : Node2D
             return;
         }
 
+        // Only the dedicated miss zone should consume a life.
         if (body.IsInGroup(MissZoneGroup))
         {
             Resolve(Missed);

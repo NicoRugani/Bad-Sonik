@@ -13,6 +13,7 @@ public partial class PlayerMovement : CharacterBody2D
 
     public override void _PhysicsProcess(double delta)
     {
+        // Ignore input once gameplay is no longer active.
         if (GetTree().CurrentScene is World world && !world.IsGameplayActive)
         {
             Velocity = new Vector2(0f, Velocity.Y);
